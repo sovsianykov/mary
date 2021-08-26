@@ -1,0 +1,29 @@
+.home {
+
+  width: 100%;
+  color: #ffffff;
+  text-shadow: 0 0 1px #000000;
+
+  .picture {
+      margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+  .title {
+    margin-top: 110px;
+    text-align: center;
+    font-size: 40px;
+    letter-spacing: .2rem;
+    padding: 10px;
+  }
+  .description {
+    font-size: 25px;
+    padding: 0 20px;
+    font-weight: 300;
+    letter-spacing: .1rem;
+    text-shadow: 0 0 10px firebrick;
+
+
+  }
+}

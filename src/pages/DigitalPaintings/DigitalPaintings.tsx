@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from "./DigitalPaintings.module.scss"
+// import styles from "./DigitalPaintings.module.scss"
 
 const DigitalPaintings = () => {
     return (

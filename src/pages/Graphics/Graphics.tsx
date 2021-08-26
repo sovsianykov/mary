@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from "./Graphics.module.scss";
+// import styles from "./Graphics.module.scss";
 
 const Graphics = () => {
     return (

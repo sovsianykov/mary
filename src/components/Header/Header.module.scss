@@ -3,7 +3,7 @@
   height: 80px;
   position: fixed;
   top: 0;
-  background-color:  goldenrod ;
+  background-color: #08456b;
   overflow: hidden;
 
   .title {
@@ -20,9 +20,9 @@
     text-shadow: 0 0 3px #000000;
   }
   .dragon_eye {
-    background-color: red;
-    background-image:linear-gradient(to right, goldenrod 25%, rgba(218, 165, 32, 0.15) 50%, goldenrod 75%);
-    color: goldenrod;
+    background-color: #0C68A5;
+    background-image:linear-gradient(to right, #08456b 25%, #99c6ec 50%, #08456b 75%);
+    color: #0C68A5;
     height: 100%;
     animation:  move_eye 15s linear 0s infinite alternate ;
   }

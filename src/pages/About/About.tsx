@@ -1,5 +1,4 @@
 import React, {FunctionComponent} from "react";
-import styles from "./About.module.scss";
 import {
   createStyles,
   makeStyles,
@@ -7,7 +6,7 @@ import {
   Theme,
   Typography,
 } from "@material-ui/core";
-  const useStyles = makeStyles<Theme>((theme: Theme) => {
+  const useStyles = makeStyles<Theme>(() => {
   return createStyles({
     rootWrapper: {
       display: "flex",

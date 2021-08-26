@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { memo } from 'react';
 import styles from "./Home.module.scss"
 import HeroPhoto from "../../components/HeroPhoto/HeroPhoto";
 import {Grid, Typography} from "@material-ui/core";
@@ -23,4 +23,4 @@ const Home = () => {
     );
 };
 
-export default Home;
+export default memo(Home);

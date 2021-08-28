@@ -4,22 +4,27 @@ import {
   makeStyles,
   Paper,
   Theme,
+    Grid,
   Typography,
 } from "@material-ui/core";
   const useStyles = makeStyles<Theme>(() => {
   return createStyles({
     rootWrapper: {
       display: "flex",
+      alignItems: "center",
+      justifyContent: "center",
       width: "100%",
-      margin: " 0 auto",
+      margin: " 0px auto",
+
+
     },
-    root: {
-      marginTop: "50px",
-      padding: "10px",
-      width: "100%",
-    },
+    paper: {
+      marginTop: "10px",
+      padding: "20px",
+      width: "80%",
+
     title: {
-      marginTop: "20px",
+      margin: "20px",
       fontSize: "50px",
       letterSpacing: ".2rem",
       fontWeight: 500,
@@ -29,15 +34,17 @@ import {
       padding: " 30px",
       letterSpacing: ".1rem",
       fontWeight: 500,
+      margin: "30px",
     },
+    }
   });
 });
 
 const About: FunctionComponent = () => {
   const classes = useStyles();
   return (
-    <section className={classes.rootWrapper}>
-      <Paper className={classes.root}>
+    <Grid  container  className={classes.rootWrapper}>
+      <Paper className={classes.paper}>
         <Typography className={classes.title} variant="h4" align="center">
           About me
         </Typography>
@@ -64,10 +71,24 @@ const About: FunctionComponent = () => {
           hic id modi perferendis porro sunt voluptas. Deserunt, excepturi
           expedita iusto magni repellendus saepe sequi velit voluptate. Ad alias
           aliquid cupiditate distinctio dolor eveniet in molestiae
-          necessitatibus optio quam quis, ullam!
+          necessitatibus optio quam quis, ullam! Lorem ipsum dolor sit amet,
+          consectetur adipisicing elit. Accusamus hic id modi perferendis porro
+          sunt voluptas. Deserunt, excepturi expedita iusto magni repellendus
+          saepe sequi velit voluptate. Ad alias aliquid cupiditate distinctio
+          dolor eveniet in molestiae necessitatibus optio quam quis, ullam!
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus
+          hic id modi perferendis porro sunt voluptas. Deserunt, excepturi
+          expedita iusto magni repellendus saepe sequi velit voluptate. Ad alias
+          aliquid cupiditate distinctio dolor eveniet in molestiae
+          necessitatibus optio quam quis, ullam! Lorem ipsum dolor sit amet,
+          consectetur adipisicing elit. Accusamus hic id modi perferendis porro
+          sunt voluptas. Deserunt, excepturi expedita iusto magni repellendus
+          saepe sequi velit voluptate. Ad alias aliquid cupiditate distinctio
+          dolor eveniet in molestiae necessitatibus optio quam quis, ullam!
+
         </Typography>
       </Paper>
-    </section>
+    </Grid>
   );
 };
 

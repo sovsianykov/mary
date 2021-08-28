@@ -10,7 +10,7 @@ const Home = () => {
                     <HeroPhoto/>
                 </Grid>
                 <Grid item xs={12}  sm={7}>
-                   <Typography  className={styles.title}>Hello, I'm Mary ! </Typography>
+                   <Typography  className={styles.title}>Привет, я Мери! </Typography>
                    <p className={styles.description}>Lorem ipsum dolor sit amet,
                        consectetur adipisicing elit. Ad adipisci aliquam amet animi
                        at dolores doloribus earum error est et ex exercitationem harum,

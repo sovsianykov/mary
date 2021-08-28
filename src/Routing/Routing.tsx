@@ -9,11 +9,13 @@ import DigitalPaintings from "../pages/DigitalPaintings/DigitalPaintings";
 import Contacts from "../pages/Contacts/Contacts";
 import Layout from "../components/Layout/Layout";
 import Footer from "../components/Footer/Footer";
+import Header from "../components/Header/Header";
 
 
 const Routing:FunctionComponent = () => {
     return (
         <Router>
+            <Header/>
             <Navigation/>
              <Layout>
                  <Switch>

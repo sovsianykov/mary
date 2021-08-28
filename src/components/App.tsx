@@ -10,7 +10,6 @@ const App:FunctionComponent = () => {
   return (
 
     <div className="App">
-        <Header/>
         <Routing/>
     </div>
   );

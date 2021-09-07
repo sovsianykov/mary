@@ -4,7 +4,7 @@ import React from 'react';
 const DigitalPaintings = () => {
     return (
         <div>
-            Digital
+            
         </div>
     );
 };

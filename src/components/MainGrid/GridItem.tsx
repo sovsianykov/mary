@@ -1,12 +1,16 @@
-import React from 'react';
+import React, {FunctionComponent} from 'react';
+import {Paint} from "../../assets/painting/Digital/Digital";
+import {Grid} from "@material-ui/core";
 
+interface GridItemProps {
+    image : Paint;
+}
 
-
-const GridItem = () => {
+const GridItem:FunctionComponent<GridItemProps> = ({image}) => {
     return (
-        <div>
+        <Grid item xs={12} md={3} >
 
-        </div>
+        </Grid>
     );
 };
 

@@ -1,18 +1,12 @@
-import React, {FunctionComponent } from 'react';
-import Header from "./Header/Header";
+import React, { FunctionComponent } from "react";
 import Routing from "../Routing/Routing";
 
-
-
-
-const App:FunctionComponent = () => {
-
+const App: FunctionComponent = () => {
   return (
-
     <div className="App">
-        <Routing/>
+      <Routing />
     </div>
   );
-}
+};
 
 export default App;

@@ -1,12 +1,21 @@
+@import "../../query";
 .photoFrame {
   align-self: center;
-  width : 300px;
+  width: 300px;
   padding: 7px;
   border: 2px solid #701212;
   border-radius: 5px;
   //box-shadow: 0 0 3px #696464;
   overflow: hidden;
   background: #ffffff;
+  @include sm {
+    height: auto;
+    width: 98%;
+    margin: 0;
+    padding: 0;
+    border: 4px solid #642a04;
+    border-radius: 0;
+  }
 
   .picture {
     display: block;

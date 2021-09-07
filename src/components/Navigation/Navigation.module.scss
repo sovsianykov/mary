@@ -1,7 +1,9 @@
+@import "../../query";
+
 .navigation {
   width: 100%;
   height: 40px;
-  background-color: #BF5C1A;
+  background-color: #bf5c1a;
   position: fixed;
   top: 80px;
   .container {
@@ -9,26 +11,37 @@
     height: 100%;
     margin: 0 auto;
     display: flex;
-
-    .navigationItem {
-      display: flex;
-      text-decoration: none;
-      font-size: 18px;
-      font-weight: 500;
-      letter-spacing: .1rem;
-      padding: 0 7px;
-      align-items: center;
-      justify-content: center;
-      color: #f3c56c;
-      cursor: pointer;
-      transition: 0.3s ease-in-out;
-
-      &_active, &:hover {
+    &_drawer {
+      flex-direction: column;
+      text-align: center;
+      &:hover {
         background-color: #974109;
         color: #ffffff;
-
-
       }
+
     }
+  }
+}
+
+.navigationItem {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+  padding: 0 20px;
+  background-color: #bf5c1a;
+  color: #efc28a;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  height: 40px;
+
+  &_active,
+  &:hover {
+    background-color: #974109;
+    color: #ffffff;
   }
 }

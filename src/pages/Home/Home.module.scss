@@ -1,44 +1,63 @@
+@import "../../query";
+
+
 .home {
+  background: url("../../assets/pastelBg.jpeg")   center /cover ;
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
   color: #763209;
   height: calc(100vh - 220px);
+  position: relative;
+  z-index: -1;
+  @include sm {
+    height: 600px ;
+  }
+  .text {
+     position: relative;
 
-
-  .picture {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    .picture {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      width: 100%;
+      padding-left: 20px;
     }
-  .title {
-    margin-left: 80px;
-    font-size: 40px;
-    letter-spacing: .2rem;
-    padding: 10px;
-  }
-  .description {
-    padding:  10px ;
-    position: relative;
-    font-size: 25px;
-    font-weight: 400;
-     width: 500px;
-    height: 300px;
-    letter-spacing: .1rem;
-    text-shadow: 0 0 10px #ffffff;
-    z-index: 5;
-    //&::after {
-    //  content: "";
-    //  position: absolute;
-    //  background: rgba(7, 69, 111, 0.65);
-    //  border-radius: 10px;
-    //  height: 300px;
-    //  width: 600px;
-    //  top: 0;
-    //  left: 0;
-    //  z-index: -1;
-    //
-    //}
-  }
-}
+    .title {
+      margin-left: 80px;
+      font-size: 40px;
+      letter-spacing: .2rem;
+      padding: 10px;
+      @include sm {
+        margin: 30px auto 0;
+        text-align: center;
+        font-size: 30px;
+        padding: 0;
+        background: url("../../assets/pastelBg.jpeg")   center /cover ;
+
+      }
+    }
+    .description {
+
+      font-size: 25px;
+      font-weight: 400;
+      width: 500px;
+      height: 300px;
+      letter-spacing: .1rem;
+      text-shadow: 0 0 10px #ffffff;
+      z-index: 5;
+      @include sm {
+        padding: 25px;
+        margin: 0;
+        font-weight: 400;
+        width: 100%;
+        font-size: 20px;
+        background: url("../../assets/pastelBg.jpeg")   center center  ;
+
+
+      }
+    }
+  }}
+
+

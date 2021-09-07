@@ -3,7 +3,7 @@ import Routing from "../Routing/Routing";
 
 const App: FunctionComponent = () => {
   return (
-    <div className="App">
+    <div>
       <Routing />
     </div>
   );

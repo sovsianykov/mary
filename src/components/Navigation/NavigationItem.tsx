@@ -7,7 +7,7 @@ import { Link } from "react-router-dom"
 export interface NavigationItemProps {
     item: NavItem;
     onClick(id: number): void;
-    active: boolean;
+    active?: boolean;
 
 
 }
@@ -27,7 +27,7 @@ const NavigationItem:FunctionComponent<NavigationItemProps> = ({
 
      const classNames = useMemo(()=>cn({
          [styles.navigationItem] : true,
-         [styles.navigationItem_active]: active
+         [styles.navigationItem_active]: active,
      }),[active])
 
 

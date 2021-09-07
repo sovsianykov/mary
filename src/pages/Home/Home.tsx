@@ -5,11 +5,11 @@ import {Grid, Typography} from "@material-ui/core";
 
 const Home = () => {
     return (
-            <Grid container className={styles.home} >
+            <Grid container className={styles.home}  >
                 <Grid item xs={12}  sm={5} className={styles.picture} >
                     <HeroPhoto/>
                 </Grid>
-                <Grid item xs={12}  sm={7}>
+                <Grid item xs={12}  sm={7} className={styles.text}>
                    <Typography  className={styles.title}>Привет, я Мери! </Typography>
                    <p className={styles.description}>Lorem ipsum dolor sit amet,
                        consectetur adipisicing elit. Ad adipisci aliquam amet animi

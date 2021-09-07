@@ -1,8 +1,10 @@
+@import "../../query";
 .header {
   width: 100%;
   height: 80px;
   position: fixed;
   top: 0;
+  left: 0;
   background-color: #f67c31;
   overflow: hidden;
 
@@ -18,6 +20,12 @@
     letter-spacing: .2rem;
     font-weight: 400;
     text-shadow: 0 0 3px #000000;
+    @include sm {
+      font-size: 30px;
+      line-height: 30px;
+
+
+    }
   }
   .dragon_eye {
     background-color: #f67c31;

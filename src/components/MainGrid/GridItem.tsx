@@ -1,6 +1,7 @@
 import React, {FunctionComponent} from 'react';
-import {Paint} from "../../assets/painting/Digital/Digital";
-import {Grid} from "@material-ui/core";
+import { Paint } from "../../assets/painting/Digital/Digital";
+import styles from "./MainGrid.module.scss";
+
 
 interface GridItemProps {
     image : Paint;
@@ -8,9 +9,12 @@ interface GridItemProps {
 
 const GridItem:FunctionComponent<GridItemProps> = ({image}) => {
     return (
-        <Grid item xs={12} md={3} >
-
-        </Grid>
+       <>
+           <div className={styles.imageFrame}>
+               <img src={image.src} alt={image.title} className={styles.picture}/>
+                {/*<p className={styles.title}>{image.title}</p>*/}
+           </div>
+       </>
     );
 };
 

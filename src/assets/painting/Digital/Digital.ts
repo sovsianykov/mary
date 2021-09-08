@@ -13,5 +13,5 @@ export const digitalPaints = [
 export interface Paint {
     id: number;
     title: string;
-    src: HTMLImageElement ;
+    src: any ;
 }

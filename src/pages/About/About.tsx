@@ -46,7 +46,7 @@ const About: FunctionComponent = () => {
     <Grid  container  className={classes.rootWrapper}>
       <Paper className={classes.paper}>
         <Typography className={classes.title} variant="h4" align="center">
-          About me
+          обо мне
         </Typography>
         <Typography className={classes.text} variant="body1">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus

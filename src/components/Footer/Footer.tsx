@@ -6,7 +6,10 @@ const Footer: FunctionComponent = () => {
     <footer className={styles.footer}>
       <div className={styles.container}>
         <div className={styles.iconsContainer}>
-          <a href="" className={styles.iconsWrapper}>
+          <a href="https://www.facebook.com/profile.php?id=100008529724244"
+             target="_blank"
+             rel="noreferrer"
+             className={styles.iconsWrapper}>
             <Instagram className={styles.icons} />
           </a>
             <a href="https://www.facebook.com/profile.php?id=100008529724244"
@@ -15,7 +18,10 @@ const Footer: FunctionComponent = () => {
                className={styles.iconsWrapper}>
                 <Facebook className={styles.icons}/>
             </a>
-            <a href="" className={styles.iconsWrapper}>
+            <a href="https://www.facebook.com/profile.php?id=100008529724244"
+               target="_blank"
+               rel="noreferrer"
+               className={styles.iconsWrapper}>
                 <Telegram  className={styles.icons}/>
             </a>
         </div>

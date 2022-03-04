@@ -9,12 +9,10 @@ interface GridItemProps {
 
 const GridItem:FunctionComponent<GridItemProps> = ({image}) => {
     return (
-       <>
+
            <div className={styles.imageFrame}>
                <img src={image.src} alt={image.title} className={styles.picture}/>
-                {/*<p className={styles.title}>{image.title}</p>*/}
            </div>
-       </>
     );
 };
 

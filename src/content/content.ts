@@ -28,10 +28,10 @@ export interface NavItem {
 }
 
 export const navigation: NavItem[] = [
-    { id: 1, title: "Главная", path : '/' },
-    { id: 2, title: "Обо мне", path : '/about' },
-    { id: 3, title: "Живопись", path : '/painting' },
-    { id: 4, title: "Графика", path : '/graphics' },
-    { id: 5, title: "Цифровая живопись", path : '/digital-painting' },
-    { id: 6, title: "Контакты", path : '/contacts' },
+    { id: 1, title: "Home", path : '/' },
+    { id: 2, title: "About", path : '/about' },
+    { id: 3, title: "Oil Panting", path : '/painting' },
+    { id: 4, title: "Graphics", path : '/graphics' },
+    { id: 5, title: "Digital Painting", path : '/digital-painting' },
+    { id: 6, title: "Contacts", path : '/contacts' },
 ]

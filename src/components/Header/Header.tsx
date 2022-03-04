@@ -5,7 +5,7 @@ import styles from "./Header.module.scss"
 const Header = () => {
     return (
         <header className={styles.header}>
-               <h1 className={styles.title}>Mary Ovsianykova</h1>
+               <h1 className={styles.title}>Mariia Ovsianykova</h1>
             <div className={styles.dragon_eye}/>
         </header>
     );

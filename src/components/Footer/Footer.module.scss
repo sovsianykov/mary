@@ -2,10 +2,10 @@
 .footer {
   width: 100%;
   height: 100px;
-  background: linear-gradient( 0deg , #BF5C1A, #e7976c 10% , #BF5C1A);
+  background: linear-gradient(0deg, #bf5c1a, #e7976c 10%, #bf5c1a);
   position: fixed;
   bottom: 0;
-  left: 0 ;
+  left: 0;
   @include sm {
     height: 50px;
     z-index: 6;
@@ -23,13 +23,27 @@
       z-index: 6;
       position: fixed;
       bottom: 0;
-      margin: 0 ;
-
+      margin: 0;
     }
+    .iconsContainer {
+      margin-top: 10px;
+      margin-left: 5%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 150px;
 
-    .icons {
-      width: 50px;
-      height: 50px;
+      .iconsWrapper {
+        display: block;
+        color: #efeae4;
+        width: 40px;
+        height: 40px;
+        overflow: hidden;
+        .icons {
+          display: block;
+          width: 120%;
+        }
+      }
     }
   }
 }

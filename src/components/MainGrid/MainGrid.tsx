@@ -14,7 +14,7 @@ const MainGrid: FunctionComponent<MainGridProps> = ({images}) => {
 
   return (
    <Grid container className={styles.mainGrid}>
-       {images.map((image) => <Grid key={image.id} xs={12} md={4} lg={3}   >
+       {images.map((image) => <Grid item key={image.id} xs={12} md={4} lg={3}   >
            <GridItem image={image} />
        </Grid> )}
    </Grid>

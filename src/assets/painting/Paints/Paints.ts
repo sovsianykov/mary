@@ -1,9 +1,9 @@
 
-import a from "./274801393_1152018025544848_8609823275942693953_n.jpeg";
-import b from "./272985434_988266158787439_1768196113911651050_n.jpeg";
-import c from "./273051584_734412724387338_2029490584591622343_n.jpeg";
-import d from "./273275385_644984730143242_9095918019094836902_n.jpeg";
-import e from  "./259718101_254739983521387_2570879381144502034_n.jpeg"
+import a from "./p2.jpeg";
+import b from "./p5.jpeg";
+import c from "./p4.jpeg";
+import d from "./p3.jpeg";
+import e from "./p1.jpeg"
 
 
 

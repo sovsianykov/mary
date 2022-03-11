@@ -1,12 +1,14 @@
-import React from 'react';
-// import styles from "./Graphics.module.scss";
+import React from "react";
+import MainGrid from "../../components/MainGrid/MainGrid";
+import { graphicsPaints } from "../../assets/painting/Graphics/Graphics";
+import styles from "./Graphics.module.scss";
 
 const Graphics = () => {
-    return (
-        <div>
-           Graphics
-        </div>
-    );
+  return (
+    <main className={styles.main}>
+      <MainGrid images={graphicsPaints} />
+    </main>
+  );
 };
 
 export default Graphics;

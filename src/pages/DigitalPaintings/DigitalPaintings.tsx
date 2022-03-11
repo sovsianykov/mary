@@ -6,9 +6,9 @@ import styles from "./DigitalPaintings.module.scss";
 
 const DigitalPaintings:FunctionComponent = () => {
     return (
-        <div className={styles.main}>
+        <main className={styles.main}>
           <MainGrid images={digitalPaints}/>
-        </div>
+        </main>
     );
 };
 

@@ -1,4 +1,3 @@
-import forest from "./forest.jpg";
 import boy from "./boy.jpg";
 import summer from "./summer.jpg";
 import a from "./d1.jpeg";
@@ -15,7 +14,6 @@ import j from "./d10.jpeg";
 
 
 export const digitalPaints = [
-    {id: 1, title: "forest", src: forest} ,
     {id: 2, title: "boy", src: boy} ,
     {id: 0, title: "summer", src: summer} ,
     {id: 3, title: "summer", src: a },

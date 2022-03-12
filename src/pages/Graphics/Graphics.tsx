@@ -4,7 +4,7 @@ import Gallery from "../../components/Gallery/Gallery";
 
 const Graphics = () => {
   return (
-      <Gallery photos={graphicsPaints} />
+      <Gallery images={graphicsPaints} />
   );
 };
 

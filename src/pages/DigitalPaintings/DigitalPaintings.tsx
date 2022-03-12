@@ -4,7 +4,7 @@ import {digitalPaints} from "../../assets/painting/Digital/Digital";
 
 const DigitalPaintings = () => {
     return (
-        <Gallery photos={digitalPaints}/>
+        <Gallery images={digitalPaints}/>
     );
 };
 

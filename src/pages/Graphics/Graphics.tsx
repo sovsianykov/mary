@@ -1,13 +1,10 @@
 import React from "react";
-import MainGrid from "../../components/MainGrid/MainGrid";
 import { graphicsPaints } from "../../assets/painting/Graphics/Graphics";
-import styles from "./Graphics.module.scss";
+import Gallery from "../../components/Gallery/Gallery";
 
 const Graphics = () => {
   return (
-    <main className={styles.main}>
-      <MainGrid images={graphicsPaints} />
-    </main>
+      <Gallery photos={graphicsPaints} />
   );
 };
 

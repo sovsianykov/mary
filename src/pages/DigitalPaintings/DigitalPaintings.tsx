@@ -1,14 +1,10 @@
-import React, {FunctionComponent} from 'react';
-import MainGrid from "../../components/MainGrid/MainGrid";
-import { digitalPaints } from "../../assets/painting/Digital/Digital";
-import styles from "./DigitalPaintings.module.scss";
+import React from 'react';
+import Gallery from "../../components/Gallery/Gallery";
+import {digitalPaints} from "../../assets/painting/Digital/Digital";
 
-
-const DigitalPaintings:FunctionComponent = () => {
+const DigitalPaintings = () => {
     return (
-        <main className={styles.main}>
-          <MainGrid images={digitalPaints}/>
-        </main>
+        <Gallery photos={digitalPaints}/>
     );
 };
 

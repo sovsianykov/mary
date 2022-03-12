@@ -1,8 +1,8 @@
 import React, { FunctionComponent } from "react";
 import styles from "./MainGrid.module.scss";
-import { Paint  } from "../../assets/painting/Digital/Digital";
 import { Grid } from "@material-ui/core";
 import GridItem from "./GridItem";
+import {Paint} from "../Gallery/models";
 
 interface MainGridProps {
   images: Paint[];

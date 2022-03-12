@@ -1,55 +1,61 @@
+
+
+
 .app {
   width: 100%;
   margin: 0 auto;
-  .masonry {
-    width: auto;
-    .box {
-      width: 24.3333%;
-      padding: .5%;
-
-      img {
-        width: 100%;
-        display: block;
-      }
-    }
-  }
-
-  .lightbox {
-    position: fixed;
-    z-index: 11;
-    top: 20px;
-    left: 0;
-    width: 90vw;
-    height: 120vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .lightbox img {
-    width: 60%;
-  }
-
-  .lightbox .leftBtn {
-    position: absolute;
-    top: 50%;
-    left: 30px;
-    transform: translateY(-50%);
-  }
-
-  .lightbox .rightBtn {
-    position: absolute;
-    top: 50%;
-    right: 30px;
-    transform: translateY(-50%);
-  }
-
-  .lightbox .close {
-    position: absolute;
-    right: 30px;
-    top: 200px;
-  }
 }
+
+.masonry {
+  width: auto;
+}
+
+.box {
+  width: 24.3333%;
+  padding: .1%;
+}
+
+img {
+  width: 100%;
+}
+
+.lightbox {
+  position: fixed;
+  z-index: 11;
+  top: 20px;
+  left: 0;
+  width: 90vw;
+  height: 120vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lightbox img {
+  width: 60%;
+}
+
+.lightbox .leftBtn {
+  position: absolute;
+  top: 50%;
+  left: 30px;
+  transform: translateY(-50%);
+}
+
+.lightbox .rightBtn {
+  position: absolute;
+  top: 50%;
+  right: 30px;
+  transform: translateY(-50%);
+}
+
+.lightbox .close {
+  position: absolute;
+  right: 30px;
+  top: 200px;
+}
+
+
 
 @media (max-width: 768px) {
   .box {

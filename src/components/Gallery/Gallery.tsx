@@ -1,19 +1,10 @@
-import React, {FunctionComponent, memo, useCallback, useState} from "react";
+import React, { FunctionComponent, memo, useCallback, useState } from "react";
 import Masonry from "react-masonry-component";
 import styles from "./styles.module.scss";
-import { Paint } from "../../assets/painting/Digital/Digital";
-import {Box, Button} from "@mui/material";
+import { Box, Button } from "@mui/material";
+import { Direction, GalleryProps, LightBox } from "./models";
 
-interface LightBox {
-  open: boolean;
-  index: number | null;
-  url: string;
-}
-interface Props {
-  images: Paint[];
-}
-
-const Gallery: FunctionComponent<Props> = ({ images }) => {
+const Gallery: FunctionComponent<GalleryProps> = ({ images }) => {
   const [lightBox, setLightbox] = useState<LightBox>({
     open: false,
     index: null,
@@ -32,14 +23,14 @@ const Gallery: FunctionComponent<Props> = ({ images }) => {
   );
 
   const navigate = useCallback(
-    (direction: string): void => {
-      if (direction === "next") {
+    (direction: Direction.prev | Direction.next): void => {
+      if (direction === Direction.next) {
         setLightbox({
           open: true,
           index: lightBox.index!! + 1,
           url: images[lightBox.index!! + 1].src,
         });
-      } else if (direction === "prev") {
+      } else if (direction === Direction.prev) {
         setLightbox({
           open: true,
           index: lightBox.index!! - 1,
@@ -61,7 +52,7 @@ const Gallery: FunctionComponent<Props> = ({ images }) => {
   return (
     <>
       <Box className={styles.app}>
-        <Masonry className={styles.masonry} elementType="div" >
+        <Masonry className={styles.masonry} elementType="div">
           {images.map((image, i) => (
             <Box className={styles.box} key={image.id}>
               <img
@@ -75,7 +66,7 @@ const Gallery: FunctionComponent<Props> = ({ images }) => {
       </Box>
 
       {lightBox.open && (
-        <Button className={styles.lightbox} role='presentation'>
+        <Box className={styles.lightbox} role="presentation">
           <Button
             variant="contained"
             color="warning"
@@ -89,7 +80,7 @@ const Gallery: FunctionComponent<Props> = ({ images }) => {
               variant="contained"
               color="warning"
               className={styles.leftBtn}
-              onClick={() => navigate("prev")}
+              onClick={() => navigate(Direction.prev)}
             >
               Prev
             </Button>
@@ -100,12 +91,12 @@ const Gallery: FunctionComponent<Props> = ({ images }) => {
               variant="contained"
               color="warning"
               className={styles.rightBtn}
-              onClick={() => navigate("next")}
+              onClick={() => navigate(Direction.next)}
             >
               Next
             </Button>
           )}
-        </Button>
+        </Box>
       )}
     </>
   );

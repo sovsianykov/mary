@@ -28,8 +28,3 @@ export const digitalPaints = [
     {id: 12, title: "summer", src: j },
 ]
 
-export interface Paint {
-    id: number;
-    title: string;
-    src: any ;
-}

@@ -1,6 +1,6 @@
 import React, {FunctionComponent, useCallback, useState} from "react";
 import {Button, Drawer} from "@material-ui/core";
-import {navigation, NavItem} from "../../content/content";
+import {navigation, NavItem} from "../../constants/constants";
 import NavigationItem from "./NavigationItem";
 import styles from "./Navigation.module.scss";
 

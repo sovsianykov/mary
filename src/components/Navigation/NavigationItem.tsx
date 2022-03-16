@@ -1,7 +1,7 @@
 import React, {FunctionComponent, useCallback, useMemo } from 'react';
 import styles from "./Navigation.module.scss";
 import cn from "classnames";
-import { NavItem } from "../../content/content";
+import { NavItem } from "../../constants/constants";
 import { Link } from "react-router-dom"
 
 export interface NavigationItemProps {

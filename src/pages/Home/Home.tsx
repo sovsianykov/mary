@@ -2,6 +2,10 @@ import React, { memo } from "react";
 import styles from "./Home.module.scss";
 import HeroPhoto from "../../components/HeroPhoto/HeroPhoto";
 import { Grid, Typography } from "@material-ui/core";
+import '@fontsource/roboto/300.css';
+import '@fontsource/roboto/400.css';
+import '@fontsource/roboto/500.css';
+import '@fontsource/roboto/700.css';
 
 const Home = () => {
   return (

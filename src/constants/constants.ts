@@ -14,7 +14,7 @@ export interface VerbsState {
 
 
 
-export const content = [
+export const constants = [
     {id: 0 , infinitive: "leave", pastSimple: "left" , active: true , checked: false },
     {id: 1 , infinitive: "go", pastSimple: "vent" , active: true , checked: false},
     {id: 2 , infinitive: "take", pastSimple: "took" , active: true , checked: false},

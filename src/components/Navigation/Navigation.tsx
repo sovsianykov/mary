@@ -1,6 +1,6 @@
 import React, { FunctionComponent, useState } from "react";
 import styles from "./Navigation.module.scss";
-import { navigation, NavItem } from "../../content/content";
+import { navigation, NavItem } from "../../constants/constants";
 import NavigationItem from "./NavigationItem";
 import { useMediaQuery, useTheme } from "@material-ui/core";
 import NavigationDrawer from "./NavigationDrawer";
